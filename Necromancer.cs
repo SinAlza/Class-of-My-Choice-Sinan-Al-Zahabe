@@ -58,7 +58,7 @@
         public void Attack()
         {
             Health -= Program.ally.Strength - Defense;
-            Console.WriteLine("You Slashed the enemy with your scyth.");
+            Console.WriteLine("You Slashed the enemy with your scythe.");
             Console.ReadLine();
 
             //// TODO: Implement attack method
@@ -97,7 +97,7 @@
         public void UsePower()
         {
             Health -= Program.ally.Intelligence - Defense;
-            Program.ally.Mana -= 50;
+            Program.ally.Mana -= 65;
             Console.WriteLine("You cast Toll of the Dead.");
             Console.ReadLine();
             //// TODO: Implement Use Power method
@@ -123,7 +123,7 @@
         {
             Health -= Program.enemy.Intelligence - Defense;
             Program.enemy.Mana -= 60;
-            Console.WriteLine("You cast Eldritch Blast.");
+            Console.WriteLine("Enemy breathes Fire.");
 
             if (Health <= 0)
             {
