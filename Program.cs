@@ -80,7 +80,7 @@
             }
             else
             {
-                Console.WriteLine("The enemy has defeated your character!");
+                Console.WriteLine("You have Died....");
             }
         }
     }

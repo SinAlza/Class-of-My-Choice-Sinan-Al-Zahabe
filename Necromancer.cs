@@ -83,6 +83,8 @@
         public void EnemyAttack()
         {
             Health -= Program.enemy.Strength - Defense;
+            Console.WriteLine("Enemy has charged at you!");
+            Console.ReadLine();
 
 
             if (Health <= 0)
@@ -124,6 +126,7 @@
             Health -= Program.enemy.Intelligence - Defense;
             Program.enemy.Mana -= 60;
             Console.WriteLine("Enemy breathes Fire.");
+            Console.ReadLine();
 
             if (Health <= 0)
             {
@@ -143,6 +146,7 @@
         {
             Health += 50;
             Console.WriteLine("You drank a Potion.");
+            Console.ReadLine();
         }
 
         // Restore mana
@@ -150,6 +154,7 @@
         {
             Mana += 50;
             Console.WriteLine("You drank an Ether.");
+            Console.ReadLine();
         }
 
         //Enemy Attack Method
@@ -168,7 +173,8 @@
             if (playerHealth <= 0)
             {
                 // The player is dead
-                Console.WriteLine("You have been defeated!");
+                Console.WriteLine("You have Died....");
+                Console.ReadLine();
             }
 
 
@@ -192,13 +198,15 @@
                 if (playerHealth <= 0)
                 {
                     // The player is dead
-                    Console.WriteLine("You have been defeated!");
+                    Console.WriteLine("You have Died....");
+                    Console.ReadLine();
                 }
             }
             else
             {
                 // The enemy misses the player
                 Console.WriteLine("You Dodged the Enemy's attack!");
+                Console.ReadLine();
 
             }
 
