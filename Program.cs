@@ -13,9 +13,9 @@
             ally = character;
             // Create a list of enemies
             List<Necromancer> enemies = new List<Necromancer>();
-            enemies.Add(new Necromancer("Goblin", 50, 50, 15, 5, 5, 0, 0, 15));
-            enemies.Add(new Necromancer("Orc", 100, 100, 25, 10, 10, 0, 0, 20));
-            enemies.Add(new Necromancer("Dragon", 200, 200, 40, 20, 20, 20, 20, 20));
+            enemies.Add(new Necromancer("Goblin", 75, 50,20, 5, 5, 0, 0, 15));
+            enemies.Add(new Necromancer("Orc", 100, 100, 35, 10, 10, 0, 0, 20));
+            enemies.Add(new Necromancer("Dragon", 200, 200, 60, 20, 20, 20, 20, 20));
 
             // Create a random number generator
             Random random = new Random();
